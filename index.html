@@ -9,6 +9,7 @@
       height: 100vh;
       overflow: hidden;
       display: flex;
+      flex-direction: column; /* 縦並びにする */
       justify-content: center;
       align-items: center;
       font-family: sans-serif;
@@ -20,17 +21,14 @@
   </style>
 </head>
 <body>
-  
-<h1>ようこそ！</h1>
-<p>このページにお越しくださり、ありがとうございます。</p>
+  <h1>ようこそ！</h1>
+  <p>このページにお越しくださり、ありがとうございます。<br>
+     楽しく、思い出に残るひとときをお過ごしください！</p>
 
-  
-
-  <!-- Confetti ライブラリを読み込み -->
+  <!-- Confetti ライブラリ -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
   <script>
-    // ページが読み込まれたときにクラッカーを発動
     window.addEventListener('load', () => {
       confetti({
         particleCount: 150,
